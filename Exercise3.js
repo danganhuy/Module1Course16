@@ -11,16 +11,16 @@ function RandomColor() {
     let blue = Math.floor(Math.random() * 256);
     return `rgb(${red}, ${green}, ${blue})`;
 }
-function RamdomX() {
+function RandomX() {
     return Math.floor(Math.random() * 251 + 25);
 }
-function RamdomY() {
+function RandomY() {
     return Math.floor(Math.random() * 101 + 25);
 }
 function CreateCircle(){
     let ctx = document.getElementById("myCanvas").getContext("2d");
     ctx.beginPath();
-    ctx.arc(RamdomX(), RamdomY(), RandomRadius(), 0, 2 * Math.PI);
+    ctx.arc(RandomX(), RandomY(), RandomRadius(), 0, 2 * Math.PI);
     ctx.fillStyle = RandomColor();
     ctx.fill();
 }
